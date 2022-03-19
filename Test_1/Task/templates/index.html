@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/Page_1.css">
+</head>
+<body>
+<h1 style="text-align: center">Здравствуйте, {{ user.username|default:'Guest' }}</h1>
+ <div class="First">
+     <a href="{% url 'main' %}" input type="submit" style="font-size: 20px">Страница без авторизации</a>
+ <br>
+{% if user.is_authenticated%}
+    {{ result }}
+{% else %}
+    <a href="autho/login" input type="submit" style="font-size: 50px;">Авторизироваться</a>
+{% endif %}
+ </div>
+</body>
+</html>

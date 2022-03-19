@@ -1,0 +1,12 @@
+.First {
+    text-transform: uppercase;
+    line-height: 250px;
+    font-size: 100px;
+    text-align: center;
+}
+.Second {
+    text-transform: uppercase;
+    line-height: 200px;
+    font-size: 100px;
+    text-align: center;
+}
